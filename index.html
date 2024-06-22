@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-step form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="form">
+    <div class="header">
+        <h2>create an account</h2>
+    </div>
+    <div class="body">
+        <!--pagination-->
+        <div class="pagination">
+            <div class="number active">1</div>
+            <div class="bar"></div>
+            <div class="number">2</div>
+            <div class="bar"></div>
+            <div class="number">3</div>
+            <div class="bar"></div>
+            <div class="number">4</div>
+        </div>
+
+        <!--steps-->
+        <div class="steps">
+            <div class="step">
+                <!--step 1-->
+                <h4>contact details</h4>
+                <p>lorem ipsum</p>
+                <div class="grid">
+                    <div class="col">
+                        <label for="name">name</label>
+                        <input type="text">
+                    </div>
+                    <div class="col">
+                        <label for="email">email</label>
+                        <input type="email">
+                    </div>
+                    <div class="col">
+                        <label for="phone">phone number</label>
+                        <input type="tel">
+                    </div>
+                    <div class="col">
+                        <label for="address">address</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <!--step 2-->
+            <div class="step">
+                <br/>
+                <h4>areas of interest</h4>
+                <p>lorem ipsum</p>
+                <div class="grid">
+                    <div class="col">
+                        <div class="checkbox">
+                            <input type="checkbox" id="interest-finance">
+                            <label for="interest-finance">finance</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="checkbox">
+                            <input type="checkbox" id="interest-cricket">
+                            <label for="interest-cricket">cricket</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="checkbox">
+                            <input type="checkbox" id="interest-coding">
+                            <label for="interest-coding">coding</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="checkbox">
+                            <input type="checkbox" id="interest-gaming">
+                            <label for="interest-gaming">gaming</label>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--step 3-->
+        <div class="step">
+            <h4>work experience</h4>
+            <p>lorem ipsum</p>
+            <div class="grid">
+                <div class="col">
+                    <label>experience</label>
+                    <input type="text">
+                </div>
+                <div class="col">
+                    <label>experience-1</label>
+                    <input type="text">
+                </div>
+                <div class="col">
+                    <label>experience-2</label>
+                    <input type="text">
+                </div>
+                <div class="col">
+                    <label>experience-3</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <!--step 4-->
+        <div class="step">
+            <div class="confirmation">
+                <br/><br/>
+                <h2>create my account</h2>
+                <p>lorem ipsum</p>
+                <div>
+                    <button>submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="prev" disabled>back</button>
+        <button class="next">next</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
